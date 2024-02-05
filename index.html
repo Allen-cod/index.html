@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {           
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: lightcyan;
+            color: #333;
+            
+        }
+
+        header {
+            text-align:center;
+            margin-bottom: 20px;
+            color:red;
+            
+            
+        }
+
+        h1 {
+            color:"black";
+        }
+
+        p {
+            margin: 0;
+        }
+
+        section {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0,0);
+        }
+
+        h2 {
+            color: #007bff;
+        }
+    
+        
+
+        ul {
+            list-style-type:none;
+            padding: 0;
+            margin: 0;
+            box-shadow: 2px 2px 2px rgba(0,0,0,3);
+            cursor: pointer;
+            background-color: lavenderblush;
+        }
+
+        li {
+          color: black;
+            margin-bottom: 10px;
+        }
+
+        button{ 
+            
+            display:center;
+            justify-content:center;
+            align-items:center;
+            background-color:gray;
+            color: #fff;
+            padding: 8px 16px;
+            box-shadow: 3px 3px 3px rgba(0,0,0,2);
+            cursor: pointer;
+        }
+        .button:active{ 
+          margin-top: 3px;
+          margin-left: 3px;
+          box-shadow: none;
+        }
+        
+    
+       
+          #aboutme-list{
+            display: none;
+          }
+       
+        #contactinformation-list{
+          display: none;
+        }
+
+        #skills-list {
+            display: none;
+        }
+        #acomplishment-list {
+          display:none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <img src="allen.jpg" width="250px"length="150px"alt="allen.jpg">
+     <p>Allen Dumagil</p>
+    </header>
+    
+    <section class="section" id="About Me-section">
+      <button onclick="toggleAboutMe()">About Me</button>
+      <ul id="aboutme-list">
+        <li> Im Allen Dumagil from Alegria Cebu province , currently studying in Center Industrial Technology and Enterprises (CITE). Taking a 3years course diploma of Computer Engineering and as a ojt trainee who can support your Equipment Engineering Team/Department and can be assigned Computer related feild , Seeking an entry-level position to begin my caree in high level professional environment,where i can utilize my skills and business studies background. </li>
+      </ul>
+      
+    </section>
+
+    <section class="section"id="Contact Information-section">
+        
+        <button onclick="toggleContactInformation()">Contact Information</button>
+        <ul id="contactinformation-list">
+            <li>Email: dumagilallen@gmail.com</li>
+            <li>Phone: +639394243093</li>
+            <li>FB: Allen Dumagil</li>
+            
+        </ul>
+    
+    </section>
+
+    
+
+    <section class="section" id="skills-section">
+        
+        <button onclick="toggleSkills()">Skills</button>
+        <ul id="skills-list">
+            <li>Troubleshooting </li>
+            <li>Installation of AP</li>
+            <li>Adobe Photoshop </li>
+            <li>C++ Coding</li>
+            
+        </ul>
+    </section>
+    
+        <section class="section"id="Contact Information-section">
+        
+        <button onclick="toggleAcomplisment()">Acomplishment</button>
+        <ul id="acomplishment-list">
+            <li>INTRODUCTION:</li>
+                  <li>As an intern, I am delighted to present my accomplishment report, reflecting my dedicated efforts and valuable experiences during my tenure. This report highlights the meaningful contributions I've made to the team, the skills I've acquired, and the positive impact on both personal and professional growth throughout this rewarding internship.</li>
+                  <li>MONTH of OCTOBER - DECEMBER:
+                 </li>
+                  <li>
+                    •Broadcasting CCTV</li>
+                 <li>•Connecting Printer using IP address 
+                  </li>
+                  <li>•Set Up Sound and Projector </li>
+                  <li>•Installed Telephone </li>
+                  <li>•Editing Signage Display</li>
+                  <li>•Format Hard Disk Drive</li>
+                  <li>•Installed Computer Pc</li>
+                  <li>•Resets Door Lock Log in room</li>
+                  <li>•Installed CCTV </li>
+                  <li>•Installed VPN</li>
+                  <li>•Pulled out CCTV and Cable Wire</li>
+                  <li>•Cloning USB to Tv room</li>
+                  <li>•Installed Antivirus Application </li>
+                  <li>•Troubleshoot DHCP into Automatically</li>
+                  <li>•Installed AP Ethernet </li>
+                  <li>•Backuping File</li>
+                  <li>•Guest Concern (Inhouse Guest, Employee, must given high priority to urgent situation.)</li>
+                  <li>•Checking Connection of RFID VPN</li>
+                  
+                  
+            
+        </ul>
+    
+    </section>
+  
+  
+  
+    <script>
+      function toggleAboutMe(){
+        var aboutmeList = document.getElementById("aboutme-list");aboutmeList.style.display= (aboutmeList.style.display=== 'none')? 'block':'none';
+       } 
+       function toggleContactInformation(){
+        var contactinformationList = document.getElementById("contactinformation-list");
+        contactinformationList.style.display = (contactinformationList.style.display=== 'none') ? 'block' : 'none';
+    }
+    function toggleSkills() {
+            var skillsList = document.getElementById('skills-list');
+            skillsList.style.display = (skillsList.style.display === 'none') ? 'block' : 'none';
+        } 
+        function toggleAcomplisment(){
+        var acomplishmentList = document.getElementById("acomplishment-list");
+        acomplishmentList.style.display = (acomplishmentList.style.display=== 'none') ? 'block' : 'none';
+        }
+      
+    </script>
+   
+
+</body>
+</html>
